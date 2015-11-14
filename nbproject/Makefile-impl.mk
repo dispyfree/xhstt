@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=kheLib
+PROJECTNAME=xhstt
 
 # Active Configuration
 DEFAULTCONF=Debug

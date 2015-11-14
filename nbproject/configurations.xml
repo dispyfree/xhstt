@@ -145,8 +145,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>base/LibraryTests.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
-      <itemPath>base/tests.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -347,6 +347,8 @@
           <commandLine>-lexpat -lgtest</commandLine>
         </linkerTool>
       </compileType>
+      <item path="base/LibraryTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="base/cost/Cost.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/cost/Cost.h" ex="false" tool="3" flavor2="0">
@@ -428,8 +430,6 @@
       <item path="base/solution/Task.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/solution/Task.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="base/tests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/time/Meet.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -882,6 +882,8 @@
           <commandLine>-lexpat</commandLine>
         </linkerTool>
       </compileType>
+      <item path="base/LibraryTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="base/cost/Cost.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/cost/Cost.h" ex="false" tool="3" flavor2="0">
@@ -963,8 +965,6 @@
       <item path="base/solution/Task.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/solution/Task.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="base/tests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/time/Meet.cpp" ex="false" tool="1" flavor2="0">
       </item>

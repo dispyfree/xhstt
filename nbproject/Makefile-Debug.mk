@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/base/LibraryTests.o \
 	${OBJECTDIR}/base/cost/Cost.o \
 	${OBJECTDIR}/base/cost/CostFunction.o \
 	${OBJECTDIR}/base/event/Event.o \
@@ -54,7 +55,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/base/solution/SolutionGroup.o \
 	${OBJECTDIR}/base/solution/SolutionGroupMetaData.o \
 	${OBJECTDIR}/base/solution/Task.o \
-	${OBJECTDIR}/base/tests.o \
 	${OBJECTDIR}/base/time/Meet.o \
 	${OBJECTDIR}/base/time/Time.o \
 	${OBJECTDIR}/base/time/TimeGroup.o \
@@ -395,6 +395,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib ${OBJECTFILES} ${LDLIBSOPTIONS} -lexpat -lgtest
 
+${OBJECTDIR}/base/LibraryTests.o: base/LibraryTests.cpp 
+	${MKDIR} -p ${OBJECTDIR}/base
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Ibase -Ibase/cost -Ibase/file -Ibase/file -Ibase/resource -Ibase/solution -Ibase/time -Iconstraint -Iconstraint/abstract -Iexception -Iinternal -I../../lib/khe -Ibase/event -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/base/LibraryTests.o base/LibraryTests.cpp
+
 ${OBJECTDIR}/base/cost/Cost.o: base/cost/Cost.cpp 
 	${MKDIR} -p ${OBJECTDIR}/base/cost
 	${RM} "$@.d"
@@ -489,11 +494,6 @@ ${OBJECTDIR}/base/solution/Task.o: base/solution/Task.cpp
 	${MKDIR} -p ${OBJECTDIR}/base/solution
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Ibase -Ibase/cost -Ibase/file -Ibase/file -Ibase/resource -Ibase/solution -Ibase/time -Iconstraint -Iconstraint/abstract -Iexception -Iinternal -I../../lib/khe -Ibase/event -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/base/solution/Task.o base/solution/Task.cpp
-
-${OBJECTDIR}/base/tests.o: base/tests.cpp 
-	${MKDIR} -p ${OBJECTDIR}/base
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -Ibase -Ibase/cost -Ibase/file -Ibase/file -Ibase/resource -Ibase/solution -Ibase/time -Iconstraint -Iconstraint/abstract -Iexception -Iinternal -I../../lib/khe -Ibase/event -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/base/tests.o base/tests.cpp
 
 ${OBJECTDIR}/base/time/Meet.o: base/time/Meet.cpp 
 	${MKDIR} -p ${OBJECTDIR}/base/time

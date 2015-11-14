@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/base/LibraryTests.o \
 	${OBJECTDIR}/base/cost/Cost.o \
 	${OBJECTDIR}/base/cost/CostFunction.o \
 	${OBJECTDIR}/base/event/Event.o \
@@ -54,7 +55,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/base/solution/SolutionGroup.o \
 	${OBJECTDIR}/base/solution/SolutionGroupMetaData.o \
 	${OBJECTDIR}/base/solution/Task.o \
-	${OBJECTDIR}/base/tests.o \
 	${OBJECTDIR}/base/time/Meet.o \
 	${OBJECTDIR}/base/time/Time.o \
 	${OBJECTDIR}/base/time/TimeGroup.o \
@@ -105,295 +105,300 @@ LDLIBSOPTIONS=-L../../lib/khe ../../lib/khe/so/khe_archive.so ../../lib/khe/so/k
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_archive.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_archive.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_archive_metadata.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_archive_metadata.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_assign_resource_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_assign_resource_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_assign_resource_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_assign_resource_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_assign_time_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_assign_time_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_assign_time_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_assign_time_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_avoid_clashes_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_avoid_clashes_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_avoid_clashes_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_avoid_clashes_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_avoid_split_assignments_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_avoid_split_assignments_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_avoid_split_assignments_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_avoid_split_assignments_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_avoid_unavailable_times_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_avoid_unavailable_times_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_avoid_unavailable_times_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_avoid_unavailable_times_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_cluster_busy_times_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_cluster_busy_times_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_cluster_busy_times_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_cluster_busy_times_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_cycle_meet.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_cycle_meet.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_distribute_split_events_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_distribute_split_events_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_distribute_split_events_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_distribute_split_events_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_evenness_handler.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_evenness_handler.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_evenness_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_evenness_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_event.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_event.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_event_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_event_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_event_in_soln.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_event_in_soln.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_event_resource.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_event_resource.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_event_resource_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_event_resource_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_event_resource_in_soln.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_event_resource_in_soln.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_group_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_group_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_instance.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_instance.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_instance_metadata.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_instance_metadata.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_layer.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_layer.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_limit_busy_times_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_limit_busy_times_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_limit_busy_times_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_limit_busy_times_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_limit_idle_times_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_limit_idle_times_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_limit_idle_times_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_limit_idle_times_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_limit_workload_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_limit_workload_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_limit_workload_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_limit_workload_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_link_events_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_link_events_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_link_events_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_link_events_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_lset.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_lset.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_mark.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_mark.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_matching.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_matching.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_meet.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_meet.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_meet_bound.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_meet_bound.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_node.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_node.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_order_events_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_order_events_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_order_events_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_order_events_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ordinary_demand_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ordinary_demand_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_part_graph.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_part_graph.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_partition.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_partition.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_path.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_path.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_prefer_resources_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_prefer_resources_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_prefer_resources_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_prefer_resources_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_prefer_times_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_prefer_times_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_prefer_times_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_prefer_times_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_priqueue.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_priqueue.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_resource.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_resource.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_resource_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_resource_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_resource_in_soln.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_resource_in_soln.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_resource_type.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_resource_type.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_se_ejector.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_se_ejector.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_se_primary.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_se_primary.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_se_secondary.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_se_secondary.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_se_solvers.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_se_solvers.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_assigned_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_assigned_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_avoid_clashes_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_avoid_clashes_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_distribute_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_distribute_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_domain_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_domain_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_layer_tree.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_layer_tree.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_link_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_link_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_pack_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_pack_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_preassigned_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_preassigned_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_split_class.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_split_class.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_split_forest.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_split_forest.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_split_layer.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_split_layer.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_split_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_split_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sl_spread_split_job.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sl_spread_split_job.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_backoff.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_backoff.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_benchmark.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_benchmark.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_general_solve.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_general_solve.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_options.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_options.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_parallel_solve.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_parallel_solve.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_stats.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_stats.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sm_workload.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sm_workload.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_soln.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_soln.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_soln_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_soln_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_soln_group_metadata.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_soln_group_metadata.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_split_events_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_split_events_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_split_events_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_split_events_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_spread_events_constraint.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_spread_events_constraint.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_spread_events_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_spread_events_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_combined.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_combined.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_first_resource.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_first_resource.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_invariant.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_invariant.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_kempe.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_kempe.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_pack_resource.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_pack_resource.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_rematch.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_rematch.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_resource_pair.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_resource_pair.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_split_resource.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_split_resource.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_task_bound_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_task_bound_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_task_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_task_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_sr_task_tree.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_sr_task_tree.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_grouping.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_grouping.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_layers.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_layers.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_misc.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_misc.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_nodes.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_nodes.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_runarounds.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_runarounds.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_splits.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_splits.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_time_equiv.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_time_equiv.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_ss_zones.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_ss_zones.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_basic.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_basic.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_cluster_and_limit.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_cluster_and_limit.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_combined.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_combined.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_domain.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_domain.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_elm_core.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_elm_core.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_elm_irregular.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_elm_irregular.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_elm_node.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_elm_node.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_elm_split.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_elm_split.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_helper.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_helper.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_kempe.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_kempe.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_layer_asst.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_layer_asst.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_layer_node_match.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_layer_node_match.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_layered.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_layered.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_meet_bound_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_meet_bound_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_meet_set_repair.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_meet_set_repair.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_runaround.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_runaround.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_st_tree_repair.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_st_tree_repair.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_task.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_task.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_task_bound.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_task_bound.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_tasking.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_tasking.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_time.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_time.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_time_group.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_time_group.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_time_group_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_time_group_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_time_group_nhood.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_time_group_nhood.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_timetable_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_timetable_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_trace.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_trace.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_wmatch.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_wmatch.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_workload_demand_monitor.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_workload_demand_monitor.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/khe_zone.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/khe_zone.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/kml.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/kml.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ../../lib/khe/so/m.so
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ../../lib/khe/so/m.so
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib ${OBJECTFILES} ${LDLIBSOPTIONS} -lexpat
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt ${OBJECTFILES} ${LDLIBSOPTIONS} -lexpat
+
+${OBJECTDIR}/base/LibraryTests.o: base/LibraryTests.cpp 
+	${MKDIR} -p ${OBJECTDIR}/base
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -Ibase -Ibase/cost -Ibase/file -Ibase/file -Ibase/resource -Ibase/solution -Ibase/time -Iconstraint -Iconstraint/abstract -Iexception -Iinternal -I../../lib/khe -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/base/LibraryTests.o base/LibraryTests.cpp
 
 ${OBJECTDIR}/base/cost/Cost.o: base/cost/Cost.cpp 
 	${MKDIR} -p ${OBJECTDIR}/base/cost
@@ -489,11 +494,6 @@ ${OBJECTDIR}/base/solution/Task.o: base/solution/Task.cpp
 	${MKDIR} -p ${OBJECTDIR}/base/solution
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -Ibase -Ibase/cost -Ibase/file -Ibase/file -Ibase/resource -Ibase/solution -Ibase/time -Iconstraint -Iconstraint/abstract -Iexception -Iinternal -I../../lib/khe -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/base/solution/Task.o base/solution/Task.cpp
-
-${OBJECTDIR}/base/tests.o: base/tests.cpp 
-	${MKDIR} -p ${OBJECTDIR}/base
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Ibase -Ibase/cost -Ibase/file -Ibase/file -Ibase/resource -Ibase/solution -Ibase/time -Iconstraint -Iconstraint/abstract -Iexception -Iinternal -I../../lib/khe -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/base/tests.o base/tests.cpp
 
 ${OBJECTDIR}/base/time/Meet.o: base/time/Meet.cpp 
 	${MKDIR} -p ${OBJECTDIR}/base/time
@@ -651,7 +651,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/xhstt
 
 # Subprojects
 .clean-subprojects:

@@ -12,16 +12,16 @@ CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
 CND_ARTIFACT_NAME_Debug=khelib
 CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/khelib
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=khelib.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/khelib.tar
+CND_PACKAGE_NAME_Debug=xhstt.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/xhstt.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=khelib
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/khelib
+CND_ARTIFACT_NAME_Release=xhstt
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/xhstt
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=khelib.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/khelib.tar
+CND_PACKAGE_NAME_Release=xhstt.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/xhstt.tar
 #
 # include compiler specific variables
 #
