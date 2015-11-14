@@ -1,0 +1,33 @@
+<HighSchoolTimetableArchive Id="archiveID">
+  <Instances>
+    <Instance Id="testInstance">
+      <MetaData>
+        <Name>testInst</Name>
+        <Contributor>unspecified</Contributor>
+        <Date>unspecified</Date>
+        <Country>unspecified</Country>
+        <Description>unspecified</Description>
+        <Remarks>unspecified</Remarks>
+      </MetaData>
+      <Times>
+        <Time Id="Time1">
+          <Name>Time1</Name>
+        </Time>
+        <Time Id="Time2">
+          <Name>Time2</Name>
+        </Time>
+      </Times>
+      <Resources>
+        <ResourceTypes>
+          <ResourceType Id="resT"><Name>restT</Name></ResourceType>
+        </ResourceTypes>
+        <Resource Id="res1">
+          <Name>res1</Name>
+          <ResourceType Reference="resT"/>
+        </Resource>
+      </Resources>
+      <Events/>
+      <Constraints/>
+    </Instance>
+  </Instances>
+</HighSchoolTimetableArchive>

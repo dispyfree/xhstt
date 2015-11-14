@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="base" displayName="base" projectFiles="true">
+      <logicalFolder name="cost" displayName="cost" projectFiles="true">
+        <itemPath>base/cost/Cost.cpp</itemPath>
+        <itemPath>base/cost/Cost.h</itemPath>
+        <itemPath>base/cost/CostFunction.cpp</itemPath>
+        <itemPath>base/cost/CostFunction.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="event" displayName="event" projectFiles="true">
+        <itemPath>base/event/Event.cpp</itemPath>
+        <itemPath>base/event/Event.h</itemPath>
+        <itemPath>base/event/EventGroup.cpp</itemPath>
+        <itemPath>base/event/EventGroup.h</itemPath>
+        <itemPath>base/event/EventGroupKind.cpp</itemPath>
+        <itemPath>base/event/EventGroupKind.h</itemPath>
+        <itemPath>base/event/EventResource.cpp</itemPath>
+        <itemPath>base/event/EventResource.h</itemPath>
+        <itemPath>base/event/EventResourceGroup.cpp</itemPath>
+        <itemPath>base/event/EventResourceGroup.h</itemPath>
+        <itemPath>base/event/SubEvent.cpp</itemPath>
+        <itemPath>base/event/SubEvent.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="file" displayName="file" projectFiles="true">
+        <itemPath>base/file/Archive.cpp</itemPath>
+        <itemPath>base/file/Archive.h</itemPath>
+        <itemPath>base/file/ArchiveMetaData.cpp</itemPath>
+        <itemPath>base/file/ArchiveMetaData.h</itemPath>
+        <itemPath>base/file/Instance.cpp</itemPath>
+        <itemPath>base/file/Instance.h</itemPath>
+        <itemPath>base/file/InstanceMetaData.cpp</itemPath>
+        <itemPath>base/file/InstanceMetaData.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="resource" displayName="resource" projectFiles="true">
+        <itemPath>base/resource/Resource.cpp</itemPath>
+        <itemPath>base/resource/Resource.h</itemPath>
+        <itemPath>base/resource/ResourceGroup.cpp</itemPath>
+        <itemPath>base/resource/ResourceGroup.h</itemPath>
+        <itemPath>base/resource/ResourceType.cpp</itemPath>
+        <itemPath>base/resource/ResourceType.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="solution" displayName="solution" projectFiles="true">
+        <itemPath>base/solution/Solution.cpp</itemPath>
+        <itemPath>base/solution/Solution.h</itemPath>
+        <itemPath>base/solution/SolutionGroup.cpp</itemPath>
+        <itemPath>base/solution/SolutionGroup.h</itemPath>
+        <itemPath>base/solution/SolutionGroupMetaData.cpp</itemPath>
+        <itemPath>base/solution/SolutionGroupMetaData.h</itemPath>
+        <itemPath>base/solution/Task.cpp</itemPath>
+        <itemPath>base/solution/Task.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="time" displayName="time" projectFiles="true">
+        <itemPath>base/time/Meet.cpp</itemPath>
+        <itemPath>base/time/Meet.h</itemPath>
+        <itemPath>base/time/Time.cpp</itemPath>
+        <itemPath>base/time/Time.h</itemPath>
+        <itemPath>base/time/TimeGroup.cpp</itemPath>
+        <itemPath>base/time/TimeGroup.h</itemPath>
+        <itemPath>base/time/TimeSpread.cpp</itemPath>
+        <itemPath>base/time/TimeSpread.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="constraint" displayName="constraint" projectFiles="true">
+      <logicalFolder name="abstract" displayName="abstract" projectFiles="true">
+        <itemPath>constraint/abstract/AbstractEventAndEventGroupConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractEventConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractEventGroupConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractEventResourceConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractResourceConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractTimeAndTimeGroupConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractTimeConstraint.h</itemPath>
+        <itemPath>constraint/abstract/AbstractTimeGroupConstraint.h</itemPath>
+      </logicalFolder>
+      <itemPath>constraint/AssignResourceConstraint.cpp</itemPath>
+      <itemPath>constraint/AssignResourceConstraint.h</itemPath>
+      <itemPath>constraint/AssignTimeConstraint.cpp</itemPath>
+      <itemPath>constraint/AssignTimeConstraint.h</itemPath>
+      <itemPath>constraint/AvoidClashesConstraint.cpp</itemPath>
+      <itemPath>constraint/AvoidClashesConstraint.h</itemPath>
+      <itemPath>constraint/AvoidSplitAssignmentsConstraint.cpp</itemPath>
+      <itemPath>constraint/AvoidSplitAssignmentsConstraint.h</itemPath>
+      <itemPath>constraint/AvoidUnavailableTimesConstraint.cpp</itemPath>
+      <itemPath>constraint/AvoidUnavailableTimesConstraint.h</itemPath>
+      <itemPath>constraint/ClusterBusyTimesConstraint.cpp</itemPath>
+      <itemPath>constraint/ClusterBusyTimesConstraint.h</itemPath>
+      <itemPath>constraint/Constraint.cpp</itemPath>
+      <itemPath>constraint/Constraint.h</itemPath>
+      <itemPath>constraint/DistributeSplitEventsConstraint.cpp</itemPath>
+      <itemPath>constraint/DistributeSplitEventsConstraint.h</itemPath>
+      <itemPath>constraint/LimitBusyTimesConstraint.cpp</itemPath>
+      <itemPath>constraint/LimitBusyTimesConstraint.h</itemPath>
+      <itemPath>constraint/LimitIdleTimesConstraint.cpp</itemPath>
+      <itemPath>constraint/LimitIdleTimesConstraint.h</itemPath>
+      <itemPath>constraint/LimitWorkloadConstraint.cpp</itemPath>
+      <itemPath>constraint/LimitWorkloadConstraint.h</itemPath>
+      <itemPath>constraint/LimitedTimeGroup.cpp</itemPath>
+      <itemPath>constraint/LimitedTimeGroup.h</itemPath>
+      <itemPath>constraint/LinkEventsConstraint.cpp</itemPath>
+      <itemPath>constraint/LinkEventsConstraint.h</itemPath>
+      <itemPath>constraint/OrderEventsConstraint.cpp</itemPath>
+      <itemPath>constraint/OrderEventsConstraint.h</itemPath>
+      <itemPath>constraint/PreferResourcesConstraint.cpp</itemPath>
+      <itemPath>constraint/PreferResourcesConstraint.h</itemPath>
+      <itemPath>constraint/PreferTimesConstraint.cpp</itemPath>
+      <itemPath>constraint/PreferTimesConstraint.h</itemPath>
+      <itemPath>constraint/SplitEventsConstraint.cpp</itemPath>
+      <itemPath>constraint/SplitEventsConstraint.h</itemPath>
+      <itemPath>constraint/SpreadEventsConstraint.cpp</itemPath>
+      <itemPath>constraint/SpreadEventsConstraint.h</itemPath>
+      <itemPath>constraint/allConstraints.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="exception" displayName="exception" projectFiles="true">
+      <itemPath>exception/InvalidObjectConversion.cpp</itemPath>
+      <itemPath>exception/InvalidObjectConversion.h</itemPath>
+      <itemPath>exception/ObjNotFound.h</itemPath>
+      <itemPath>exception/ObjectCreation.cpp</itemPath>
+      <itemPath>exception/ObjectCreation.h</itemPath>
+      <itemPath>exception/ObjectTypeMismatch.cpp</itemPath>
+      <itemPath>exception/ObjectTypeMismatch.h</itemPath>
+      <itemPath>exception/RequestedObjectNotFound.cpp</itemPath>
+      <itemPath>exception/RequestedObjectNotFound.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="internal" displayName="internal" projectFiles="true">
+      <itemPath>internal/CachedObj.h</itemPath>
+      <itemPath>internal/Ident.h</itemPath>
+      <itemPath>internal/IterAccessMapping.h</itemPath>
+      <itemPath>internal/KheObjInfo.h</itemPath>
+      <itemPath>internal/KheObjIter.h</itemPath>
+      <itemPath>internal/PossibleDummy.cpp</itemPath>
+      <itemPath>internal/PossibleDummy.h</itemPath>
+      <itemPath>internal/Util.cpp</itemPath>
+      <itemPath>internal/Util.h</itemPath>
+      <itemPath>internal/global.cpp</itemPath>
+      <itemPath>internal/global.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.cpp</itemPath>
+      <itemPath>base/tests.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>base</Elem>
+    <Elem>constraint</Elem>
+    <Elem>exception</Elem>
+    <Elem>internal</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>base</pElem>
+            <pElem>base/cost</pElem>
+            <pElem>base/file</pElem>
+            <pElem>base/file</pElem>
+            <pElem>base/resource</pElem>
+            <pElem>base/solution</pElem>
+            <pElem>base/time</pElem>
+            <pElem>constraint</pElem>
+            <pElem>constraint/abstract</pElem>
+            <pElem>exception</pElem>
+            <pElem>internal</pElem>
+            <pElem>../../lib/khe</pElem>
+            <pElem>base/event</pElem>
+          </incDir>
+          <commandLine>-fPIC</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/khelib</output>
+          <linkerAddLib>
+            <pElem>../../lib/khe</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibFileItem>../../lib/khe/so/khe_archive.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_archive_metadata.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_resource_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_resource_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_time_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_time_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_clashes_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_clashes_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_split_assignments_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_split_assignments_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_unavailable_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_unavailable_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_cluster_busy_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_cluster_busy_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_cycle_meet.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_distribute_split_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_distribute_split_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_evenness_handler.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_evenness_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_in_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_resource_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_resource_in_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_group_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_instance.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_instance_metadata.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_layer.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_busy_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_busy_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_idle_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_idle_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_workload_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_workload_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_link_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_link_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_lset.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_mark.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_matching.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_meet.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_meet_bound.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_node.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_order_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_order_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ordinary_demand_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_part_graph.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_partition.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_path.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_resources_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_resources_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_priqueue.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource_in_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource_type.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_ejector.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_primary.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_secondary.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_solvers.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_assigned_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_avoid_clashes_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_distribute_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_domain_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_layer_tree.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_link_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_pack_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_preassigned_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_class.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_forest.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_layer.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_spread_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_backoff.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_benchmark.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_general_solve.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_options.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_parallel_solve.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_stats.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_workload.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_soln_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_soln_group_metadata.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_split_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_split_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_spread_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_spread_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_combined.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_first_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_invariant.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_kempe.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_pack_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_rematch.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_resource_pair.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_split_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_task_bound_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_task_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_task_tree.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_grouping.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_layers.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_misc.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_nodes.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_runarounds.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_splits.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_time_equiv.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_zones.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_basic.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_cluster_and_limit.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_combined.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_domain.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_core.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_irregular.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_node.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_split.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_helper.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_kempe.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_layer_asst.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_layer_node_match.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_layered.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_meet_bound_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_meet_set_repair.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_runaround.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_tree_repair.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_task.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_task_bound.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_tasking.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time_group_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time_group_nhood.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_timetable_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_trace.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_wmatch.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_workload_demand_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_zone.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/kml.so</linkerLibFileItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../../lib/khe/so/m.so</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lexpat -lgtest</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="base/cost/Cost.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/cost/Cost.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/cost/CostFunction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/cost/CostFunction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/Event.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/Event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventGroupKind.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventGroupKind.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventResource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventResource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventResourceGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventResourceGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/SubEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/SubEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/Archive.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/Archive.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/ArchiveMetaData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/ArchiveMetaData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/Instance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/Instance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/InstanceMetaData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/InstanceMetaData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/resource/Resource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/resource/Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceType.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/solution/Solution.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/solution/Solution.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroupMetaData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroupMetaData.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="base/solution/Task.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/solution/Task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/Meet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/Meet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/time/Time.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/Time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/time/TimeGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/TimeGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/time/TimeSpread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/TimeSpread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/AssignResourceConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AssignResourceConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/AssignTimeConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AssignTimeConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/AvoidClashesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidClashesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidSplitAssignmentsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidSplitAssignmentsConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidUnavailableTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidUnavailableTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/ClusterBusyTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/ClusterBusyTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/Constraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="constraint/Constraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/DistributeSplitEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/DistributeSplitEventsConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitBusyTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitBusyTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitIdleTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitIdleTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitWorkloadConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitWorkloadConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitedTimeGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="constraint/LimitedTimeGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/LinkEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LinkEventsConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/OrderEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/OrderEventsConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/PreferResourcesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/PreferResourcesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/PreferTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/PreferTimesConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/SplitEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/SplitEventsConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/SpreadEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/SpreadEventsConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventAndEventGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventResourceConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractResourceConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractTimeAndTimeGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractTimeConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractTimeGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/allConstraints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/InvalidObjectConversion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="exception/InvalidObjectConversion.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="exception/ObjNotFound.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/ObjectCreation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="exception/ObjectCreation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/ObjectTypeMismatch.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="exception/ObjectTypeMismatch.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/RequestedObjectNotFound.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="exception/RequestedObjectNotFound.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="internal/CachedObj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/Ident.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/IterAccessMapping.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/KheObjInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/KheObjIter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/PossibleDummy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="internal/PossibleDummy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/Util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="internal/Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/global.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="internal/global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>base</pElem>
+            <pElem>base/cost</pElem>
+            <pElem>base/file</pElem>
+            <pElem>base/file</pElem>
+            <pElem>base/resource</pElem>
+            <pElem>base/solution</pElem>
+            <pElem>base/time</pElem>
+            <pElem>constraint</pElem>
+            <pElem>constraint/abstract</pElem>
+            <pElem>exception</pElem>
+            <pElem>internal</pElem>
+            <pElem>../../lib/khe</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../lib/khe</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibFileItem>../../lib/khe/so/khe_archive.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_archive_metadata.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_resource_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_resource_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_time_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_assign_time_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_clashes_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_clashes_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_split_assignments_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_split_assignments_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_unavailable_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_avoid_unavailable_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_cluster_busy_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_cluster_busy_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_cycle_meet.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_distribute_split_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_distribute_split_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_evenness_handler.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_evenness_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_in_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_resource_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_event_resource_in_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_group_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_instance.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_instance_metadata.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_layer.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_busy_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_busy_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_idle_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_idle_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_workload_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_limit_workload_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_link_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_link_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_lset.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_mark.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_matching.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_meet.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_meet_bound.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_node.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_order_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_order_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ordinary_demand_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_part_graph.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_partition.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_path.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_resources_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_resources_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_times_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_prefer_times_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_priqueue.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource_in_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_resource_type.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_ejector.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_primary.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_secondary.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_se_solvers.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_assigned_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_avoid_clashes_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_distribute_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_domain_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_layer_tree.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_link_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_pack_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_preassigned_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_class.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_forest.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_layer.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_split_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sl_spread_split_job.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_backoff.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_benchmark.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_general_solve.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_options.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_parallel_solve.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_stats.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sm_workload.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_soln.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_soln_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_soln_group_metadata.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_split_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_split_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_spread_events_constraint.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_spread_events_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_combined.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_first_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_invariant.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_kempe.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_pack_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_rematch.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_resource_pair.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_split_resource.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_task_bound_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_task_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_sr_task_tree.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_grouping.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_layers.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_misc.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_nodes.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_runarounds.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_splits.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_time_equiv.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_ss_zones.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_basic.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_cluster_and_limit.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_combined.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_domain.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_core.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_irregular.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_node.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_elm_split.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_helper.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_kempe.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_layer_asst.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_layer_node_match.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_layered.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_meet_bound_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_meet_set_repair.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_runaround.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_st_tree_repair.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_task.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_task_bound.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_tasking.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time_group.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time_group_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_time_group_nhood.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_timetable_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_trace.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_wmatch.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_workload_demand_monitor.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/khe_zone.so</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/khe/so/kml.so</linkerLibFileItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../../lib/khe/so/m.so</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lexpat</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="base/cost/Cost.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/cost/Cost.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/cost/CostFunction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/cost/CostFunction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/Event.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/Event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventGroupKind.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventGroupKind.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventResource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventResource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/EventResourceGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/EventResourceGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/event/SubEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/event/SubEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/Archive.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/Archive.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/ArchiveMetaData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/ArchiveMetaData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/Instance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/Instance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/file/InstanceMetaData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/file/InstanceMetaData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/resource/Resource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/resource/Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceType.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/resource/ResourceType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/solution/Solution.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/solution/Solution.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroupMetaData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="base/solution/SolutionGroupMetaData.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="base/solution/Task.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/solution/Task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/Meet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/Meet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/time/Time.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/Time.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/time/TimeGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/TimeGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base/time/TimeSpread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base/time/TimeSpread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/AssignResourceConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AssignResourceConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/AssignTimeConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AssignTimeConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/AvoidClashesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidClashesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidSplitAssignmentsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidSplitAssignmentsConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidUnavailableTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/AvoidUnavailableTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/ClusterBusyTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/ClusterBusyTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/Constraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="constraint/Constraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/DistributeSplitEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/DistributeSplitEventsConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitBusyTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitBusyTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitIdleTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitIdleTimesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitWorkloadConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitWorkloadConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/LimitedTimeGroup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="constraint/LimitedTimeGroup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/LinkEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/LinkEventsConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/OrderEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/OrderEventsConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/PreferResourcesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/PreferResourcesConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/PreferTimesConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/PreferTimesConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/SplitEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/SplitEventsConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="constraint/SpreadEventsConstraint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="constraint/SpreadEventsConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventAndEventGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractEventResourceConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractResourceConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractTimeAndTimeGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractTimeConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/abstract/AbstractTimeGroupConstraint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="constraint/allConstraints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/InvalidObjectConversion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="exception/InvalidObjectConversion.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="exception/ObjNotFound.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/ObjectCreation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="exception/ObjectCreation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/ObjectTypeMismatch.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="exception/ObjectTypeMismatch.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="exception/RequestedObjectNotFound.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="exception/RequestedObjectNotFound.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="internal/CachedObj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/Ident.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/IterAccessMapping.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/KheObjInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/KheObjIter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/PossibleDummy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="internal/PossibleDummy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/Util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="internal/Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="internal/global.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="internal/global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
