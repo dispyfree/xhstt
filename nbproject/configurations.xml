@@ -145,7 +145,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>base/LibraryTests.cpp</itemPath>
+      <itemPath>LibraryTests.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -347,7 +347,7 @@
           <commandLine>-lexpat -lgtest</commandLine>
         </linkerTool>
       </compileType>
-      <item path="base/LibraryTests.cpp" ex="false" tool="1" flavor2="0">
+      <item path="LibraryTests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/cost/Cost.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -882,7 +882,7 @@
           <commandLine>-lexpat</commandLine>
         </linkerTool>
       </compileType>
-      <item path="base/LibraryTests.cpp" ex="false" tool="1" flavor2="0">
+      <item path="LibraryTests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="base/cost/Cost.cpp" ex="false" tool="1" flavor2="0">
       </item>
