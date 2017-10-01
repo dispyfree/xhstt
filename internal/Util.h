@@ -39,8 +39,8 @@ namespace khe{
              tmp ret = (*func)(obj, i) ;
               if(ret == NULL)
                   throw ObjNotFound(std::string("ran into nullptr"));
-             R tmp = static_cast<R>(ret);
-             vec.push_back(tmp);
+             R tmp1 = static_cast<R>(ret);
+             vec.push_back(tmp1);
          }
          
          return std::move(vec);

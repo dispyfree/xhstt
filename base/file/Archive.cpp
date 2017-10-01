@@ -120,11 +120,9 @@ IR<SolutionGroup> Archive::getSolutionGroups() const{
 }
 
 void Archive::write(bool with_reports, FILE *fp) const{
-    if(!KheArchiveWrite(archive, with_reports, fp))
-        throw std::runtime_error("Unable to write out to archive");
+    KheArchiveWrite(archive, with_reports, fp);
 }
 
 void Archive::write(const SolutionGroup &grp, bool with_reports, FILE *fp) const{
-    if(!KheArchiveWriteSolnGroup(archive, grp, with_reports, fp))
-        throw std::runtime_error("Unable to write out to archive");
+    KheArchiveWriteSolnGroup(archive, grp, with_reports, fp);
 }

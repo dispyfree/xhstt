@@ -11,7 +11,7 @@ const std::string inputFile = "data/SpainSchool.xml";
 
 inline bool exists(const std::string& name)
 {
-    return (std::ifstream(name));
+    return (static_cast<bool>(std::ifstream(name)));
 }
 
 

@@ -9,6 +9,7 @@
 #include <vector>
 #include "Time.h"
 #include "CachedObj.h"
+#include "khe.h"
 
 namespace khe{
 
@@ -25,7 +26,8 @@ public:
         Ordinary    = KHE_TIME_GROUP_KIND_ORDINARY,
         Weekly      = KHE_TIME_GROUP_KIND_WEEK,
         Daily       = KHE_TIME_GROUP_KIND_DAY,
-        Predefined  = KHE_TIME_GROUP_KIND_PREDEFINED
+        //commented out in KHE, author did not give reasoning
+        /*Predefined  = KHE_TIME_GROUP_KIND_PREDEFINED*/
     };
 
 
